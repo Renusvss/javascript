@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Hi</title>
+  </head>
+  <body>
+    <p id="ele1">Hi</p>
+    <button type="button" onclick="changecolor();">Clickonchange</button>
+    <p id="ele2">React js</p>
+    <p>Node js</p>
+    <script>
+      //   var element = document.getElementById("ele1");
+      //   setTimeout(() => {
+      //     element.innerHTML = "<h3>Hello all</h3>";
+      //   }, 5000);
+      //   var element1 = document.getElementById("ele2");
+      //   setTimeout(() => {
+      //     element1.innerHTML = "<h1>Hi...</h1>";
+      //   }, 3000);
+      const changecolor = () => {
+        var element = document.getElementById("ele1");
+        element.innerHTML = "<h3>Node</h3>";
+        if (element.style.color === "black") {
+          element.style.color = "orange";
+          element.style.font = "20px";
+        } else {
+          element.style.color = "black";
+        }
+        alert("change is done");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  font-size: 8px;
+  justify-content: space-around;
+  background-color: rgb(202, 136, 37);
+}
+@media screen and (max-width: 992px) {
+  .container1,
+  .container2,
+  .container4,
+  .container5 {
+    display: none;
+  }
+  .container3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+  }
+  .container {
+    background-color: brown;
+  }
+}
